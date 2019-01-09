@@ -1,0 +1,39 @@
+{ 
+  "parser": "babel-eslint", 
+  "parserOptions": { 
+    "sourceType": "module"
+  }, 
+  "extends": "airbnb", 
+  "env": {
+    "es6": true,
+    "jasmine": true
+  },  
+  "plugins": [ "react", "jsx-a11y", "import" ], 
+  "rules": { 
+    "global-require": 0, 
+    "no-use-before-define": 0, 
+    "max-len": 0,
+    "no-console": 0,
+    "no-undef": 2,  
+    "no-unused-vars": 0, 
+    "block-scoped-var": 0,
+    "complexity": 0, 
+    "consistent-return": 0, 
+    "generator-star-spacing": 0, 
+    "no-return-assign": 1,
+    "react/jsx-filename-extension": 0, 
+    "react/self-closing-comp": 1, 
+    "react/jsx-closing-bracket-location": 0, 
+    "react/prop-types": 0,
+    "linebreak-style": ["error", "windows"]
+  },
+  "globals": { 
+    "window": true, 
+    "fetch": true, 
+    "__DEV__": true, 
+    "__APP__": true, 
+    "__ANDROID__": true, 
+    "__IOS__": true,
+    "DISPLAY_NAME": true
+  } 
+}
