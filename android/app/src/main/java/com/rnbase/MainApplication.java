@@ -1,4 +1,4 @@
-package com.awesomeproject;
+package com.rnbase;
 
 import android.app.Application;
 
