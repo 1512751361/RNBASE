@@ -148,3 +148,14 @@ module.exports = {
     "arrow-parens": 0, //箭头函数用小括号括起来
     "arrow-spacing": 0 //=>的前/后括号
   }
+
+###3.app/ 源代码目录结构
+1. assets/          // 静态资源目录
+2. assets/images/   // 静态资源目录---图片目录 
+3. pages/           // 项目页面目录
+4. api/             // 项目api接口目录
+5. components/      // 公共组件目录
+6. lib/             // 公共模块方法
+7. model/           // redux model管理配置
+8. router/          // 路由模块控制
+9. dva/             // redux 功能管理
