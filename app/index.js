@@ -2,6 +2,8 @@ import React from 'react';
 import { AppRegistry } from 'react-native';
 // 导入App工程名称
 import { name as appName } from '../app.json';
+// 导入语言设置
+import './lang/i18n';
 // 设备响应式容器
 import Resolution from './lib/Resolution';
 // dva模块

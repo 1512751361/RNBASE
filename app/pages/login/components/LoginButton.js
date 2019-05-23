@@ -4,6 +4,7 @@ import {
   Text,
   Button,
 } from 'react-native';
+import { I18n } from '../../../lang/i18n';
 
 export default class LoginButton extends PureComponent {
   render() {
@@ -13,7 +14,7 @@ export default class LoginButton extends PureComponent {
     return (
       <View>
         <Text>Wellcom Login Pages</Text>
-        <Button title="loginIn" onPress={onLoginPress}>Login In</Button>
+        <Button title={I18n.t('login.loginBtn')} onPress={onLoginPress} />
       </View>
     );
   }
