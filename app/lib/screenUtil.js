@@ -31,7 +31,6 @@ export const pixelRatio = PixelRatio.get();// 当前设备的像素密度
 
 export const fontScale = PixelRatio.getFontScale();// 返回字体大小缩放比例
 
-
 // px转换成dp
 const w2 = defaultWidth / DEFAULT_DENSITY;
 const h2 = defaultHeight / DEFAULT_DENSITY;
@@ -106,10 +105,11 @@ export function setSpText(size, allowFontScaling = false) {
 }
 
 export function setSpText2(size) {
-  const scaleW = screenWidth / w2;
-  const scaleH = screenHeight / h2;
-  const scale = Math.min(scaleW, scaleH);
-  const newsize = Math.round((size * scale + 0.5) / DEFAULT_DENSITY * pixelRatio);
+  // const scaleW = screenWidth / w2;
+  // const scaleH = screenHeight / h2;
+  // const scale = Math.min(scaleW, scaleH);
+  // const newsize = Math.round((size * scale + 0.5));
+  const newsize = Math.floor(size / DEFAULT_DENSITY / DEFAULT_DENSITY * pixelRatio + 0.5);
   return newsize * fontScale;
 }
 
