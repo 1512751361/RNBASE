@@ -159,3 +159,8 @@ module.exports = {
 7. model/           // redux model管理配置
 8. router/          // 路由模块控制
 9. dva/             // redux 功能管理
+10. lang/           // 国际化语言管理
+11. model/          // 全局model配置
+12. test/           // 测试代码
+13. index.js        // 项目入口文件配置
+14. models.js       // redux models模块路径文件
