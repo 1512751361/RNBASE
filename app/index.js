@@ -4,6 +4,8 @@ import { AppRegistry } from 'react-native';
 import { name as appName } from '../app.json';
 // 导入语言设置
 import './lang/i18n';
+// 导入图片资源
+import './lib/assets';
 // 设备响应式容器
 import Resolution from './lib/Resolution';
 // dva模块

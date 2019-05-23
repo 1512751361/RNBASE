@@ -9,6 +9,7 @@
   "dependencies": {
     "dva-core": "^1.4.0",
     "lodash": "^4.17.11",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-native": "^0.59.8",
     "react-native-gesture-handler": "^1.2.1",
