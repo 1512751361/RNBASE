@@ -6,7 +6,8 @@ import {
 } from 'react-native';
 import { I18n } from '../../../lang/i18n';
 import {
-  ReactTextInput,
+  RNTextInput,
+  RNButton,
 } from '../../../components';
 
 import Assets from '../../../lib/assets';
@@ -24,9 +25,9 @@ export default class LoginButton extends PureComponent {
       >
         <Text>Wellcom Login Pages</Text>
         <View style={{ height: 30 }} />
-        <ReactTextInput />
+        <RNTextInput />
         <View style={{ height: 30 }} />
-        <ReactTextInput
+        <RNTextInput
             floatingPlaceholder
             labelUri={Assets.icons.ico_phone}
             floatingPlaceholderLeft={0}
@@ -38,7 +39,7 @@ export default class LoginButton extends PureComponent {
             maxLength={13}
         />
         <View style={{ height: 30 }} />
-        <Button title={I18n.t('login.loginBtn')} onPress={onLoginPress} />
+        <RNButton title={I18n.t('login.loginBtn')} onPress={onLoginPress} />
       </View>
     );
   }

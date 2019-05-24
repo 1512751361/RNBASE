@@ -22,8 +22,8 @@ import * as models from './models';
 const app = dva({
   models,
   initialState: {}, // 设置初始化数据
-  extraReducers: { router: routerReducer }, // 指定额外的 reducer
-  onAction: [routerMiddleware], // 在 action 被 dispatch 时触发，用于注册 redux 中间件。支持函数或函数数组格式
+  // extraReducers: { router: routerReducer }, // 指定额外的 reducer
+  // onAction: [routerMiddleware], // 在 action 被 dispatch 时触发，用于注册 redux 中间件。支持函数或函数数组格式
   onError(e) {
     console.log('onError', e);
   },

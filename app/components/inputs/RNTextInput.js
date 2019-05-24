@@ -28,8 +28,8 @@ const Constants = {
 const underLineMB = (Constants.isIOS ? 10 : 5) * scaleZoom;
 
 
-export default class ReactTextInput extends Component {
-    static displayName = 'ReactTextInput'
+export default class RNTextInput extends Component {
+    static displayName = 'RNTextInput'
 
     static Typography = Typography
 
