@@ -46,5 +46,6 @@ module.exports = {
         "react/prop-types": 0,
         "react/react-in-jsx-scope": 0,
         "global-require": 0,
+        "max-len": 0
     }
 };

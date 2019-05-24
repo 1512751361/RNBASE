@@ -17,7 +17,6 @@ export default class RNTouchableOpacity extends Component {
       onPress,
       waitTime,
     } = this.props;
-    alert(3);
     const curTime = (new Date()).getTime();
     if (this.prevOnPressTime && curTime - this.prevOnPressTime <= waitTime) return;
     this.prevOnPressTime = curTime;
@@ -30,17 +29,11 @@ export default class RNTouchableOpacity extends Component {
       ref,
       ...other
     } = this.props;
-    // let refs = null;
-    // if (Object.prototype.toString.call(ref) === '[object String]' || Object.prototype.toString.call(ref) === '[object Function]') {
-    //   refs = ref;
-    // } else {
-    //   refs = e => this.buttonRef = e;
-    // }
     return (
       <TouchableOpacity
-          {...this.props}
-          // ref={refs}
-          // onPress={this.debouncePress}
+          {...other}
+          ref={ref}
+          onPress={this.debouncePress}
       >
         {children}
       </TouchableOpacity>
