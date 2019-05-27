@@ -12,7 +12,8 @@ import {
 } from 'react-native';
 // import { connect } from 'react-redux';
 // import Toast from 'react-native-simple-toast';
-import QRScannerView, { scaleZoom } from './QRScanner';
+import { scaleZoom } from '../constants';
+import QRScannerView from './QRScanner';
 import Assets from './assets';
 import { statusBarHeight, iPhoneXBottom } from '../../lib/screenUtil';
 import RNTouchableOpacity from '../button/TouchableOpacity';

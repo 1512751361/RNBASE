@@ -10,7 +10,7 @@ import {
 import PropTypes from 'prop-types';
 import WebView from 'react-native-webview';
 
-export const scaleZoom = 2;
+import { scaleZoom } from '../constants';
 
 const w = scaleZoom > 1 ? 750 : Dimensions.get('window').width; // 设备的宽度
 const h = scaleZoom > 1 ? 1336 : Dimensions.get('window').height; // 设备的高度

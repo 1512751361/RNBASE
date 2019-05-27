@@ -11,8 +11,7 @@ import {
 import RootSiblings from './RootSiblings';
 import RNTouchableOpacity from '../button/TouchableOpacity';
 import Assets from './assets';
-
-const scaleZoom = 2;
+import { scaleZoom } from '../constants';
 
 const styles = StyleSheet.create({
   sibling: {

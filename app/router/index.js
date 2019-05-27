@@ -2,6 +2,7 @@
  * 路由集成 redux
  *  */
 import React, { PureComponent } from 'react';
+import { BackHandler } from 'react-native';
 // import {
 //   createReactNavigationReduxMiddleware,
 //   createNavigationReducer,
@@ -10,6 +11,7 @@ import React, { PureComponent } from 'react';
 // import { connect } from 'react-redux';
 import AppContainer from './router';
 import NavigationService from './NavigationService';
+import { RNRootSiblings } from '../components';
 
 // 额外router reducer
 // export const routerReducer = createNavigationReducer(AppContainer);
@@ -26,6 +28,27 @@ import NavigationService from './NavigationService';
 // const AppWithNavigationState = connect(mapStateToProps)(App);
 
 export default class App extends PureComponent {
+  constructor(props) {
+    super(props);
+    this.backHandler = this.backHandler.bind(this);
+  }
+
+  componentWillMount() {
+    BackHandler.addEventListener('hardwareBackPress', this.backHandler);
+  }
+
+  componentWillUnmount() {
+    BackHandler.removeEventListener('hardwareBackPress', this.backHandler);
+  }
+
+  backHandler = () => {
+    const isAlert = RNRootSiblings.backHandler();
+    if (isAlert) {
+      return isAlert;
+    }
+    return false;
+  }
+
   render() {
     return (
       <AppContainer

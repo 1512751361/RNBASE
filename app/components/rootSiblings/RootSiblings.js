@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, AppRegistry } from 'react-native';
+import {
+ StyleSheet, View, AppRegistry,
+} from 'react-native';
 import StaticContainer from 'static-container';
 import PropTypes from 'prop-types';
 import { Provider } from 'react-redux';

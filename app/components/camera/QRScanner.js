@@ -16,7 +16,7 @@ import {
 import PropTypes from 'prop-types';
 import RNCamera from './Camera';
 
-export const scaleZoom = 2;
+import { scaleZoom } from '../constants';
 
 /**
  * 扫描界面遮罩

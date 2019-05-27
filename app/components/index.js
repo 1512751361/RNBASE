@@ -1,3 +1,4 @@
+export { default as RNConstants } from './constants';
 export { default as RNTextInput } from './inputs/RNTextInput';
 export { default as RNTouchableHighlight } from './button/TouchableHighlight';
 export { default as RNTouchableOpacity } from './button/TouchableOpacity';

@@ -12,8 +12,7 @@ import Assets from './assets';
 import RNTouchableWithoutFeedback from '../button/TouchableWithoutFeedback';
 import RNTouchableOpacity from '../button/TouchableOpacity';
 import { statusBarHeight, iPhoneXBottom } from '../../lib/screenUtil';
-
-export const scaleZoom = 2;
+import { scaleZoom } from '../constants';
 
 const styles = StyleSheet.create({
   container: {
@@ -338,8 +337,6 @@ export default class CameraScreen extends Component {
           whiteBalance={this.state.whiteBalance} // 屏幕背景
           ratio={this.state.ratio} // 比例
           focusDepth={this.state.depth} // 设置depth值
-          permissionDialogTitle="Permission to use camera" // 授权提示标题
-          permissionDialogMessage="使用相机拍摄照片" // 授权提示内容
       >
         <StatusBar
             animated

@@ -6,8 +6,7 @@ import {
 
 import RNTouchableOpacity from '../button/TouchableOpacity';
 import RNRootSiblings from '../rootSiblings';
-
-const scaleZoom = 2;
+import { scaleZoom } from '../constants';
 
 class Confirm extends PureComponent {
   constructor(props) {

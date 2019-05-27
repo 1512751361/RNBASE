@@ -10,8 +10,7 @@ import PropTypes from 'prop-types';
 import {
   BorderShadow,
 } from 'react-native-shadow';
-
-const scaleZoom = 2;
+import { scaleZoom } from '../constants';
 
 export default class RNBorder extends Component {
   static propTypes = {

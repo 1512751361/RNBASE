@@ -3,9 +3,10 @@ import {
 } from 'react-native';
 import Colors from './Colors';
 
-export const isAndroid = Platform.OS === 'android';
+import { scaleZoom as scaleZoom2 } from '../constants';
 
-export const scaleZoom = 2;
+export const scaleZoom = scaleZoom2;
+export const isAndroid = Platform.OS === 'android';
 
 export const Typography = {
   text70: {

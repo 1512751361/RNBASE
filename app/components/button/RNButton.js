@@ -8,8 +8,7 @@ import PropTypes from 'prop-types';
 import LinearGradient from 'react-native-linear-gradient';
 import { BoxShadow } from 'react-native-shadow';
 import RNTouchableOpacity from './TouchableOpacity';
-
-const scaleZoom = 2;
+import { scaleZoom } from '../constants';
 
 export default class RNButton extends PureComponent {
   static propTypes = {

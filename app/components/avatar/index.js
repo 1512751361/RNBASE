@@ -10,8 +10,7 @@ import {
 } from 'react-native';
 import PropTypes from 'prop-types';
 import Assets from './assets';
-
-const scaleZoom = 2;
+import { scaleZoom } from '../constants';
 
 const styles = StyleSheet.create({
   hl_shadow: {
