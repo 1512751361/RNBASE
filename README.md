@@ -1,4 +1,4 @@
-###1.目录结构
+### 1.目录结构
 1. android/  					// Android的原生开发目录，可以用Android Studio打开进行原生开发。
 2. ios/								// Ios的原生开发目录，可以用Xcode打开进行原生开发。
 3. node_modules/			// 存放所有的项目依赖库，配置package.json之后执行“npm install”后自动创建的文件夹。
@@ -18,7 +18,7 @@
 
 
 
-###2.eslint配置
+### 2.eslint配置
 1. 安装eslint  npm install eslint -g
 2. 进入项目安装
 	"babel-eslint": "^10.0.1",
@@ -149,7 +149,7 @@ module.exports = {
     "arrow-spacing": 0 //=>的前/后括号
   }
 
-###3.app/ 源代码目录结构
+### 3.app/ 源代码目录结构
 1. assets/          // 静态资源目录
 2. assets/images/   // 静态资源目录---图片目录 
 3. pages/           // 项目页面目录
